@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 *,
 *::before,
 *::after {
@@ -8,8 +12,8 @@
 
 html,
 body {
-  background: #f3f5fb;
-  color: #333;
+  background: linear-gradient(45deg, #30241c, #1e1f1c, #1c1c1c) no-repeat;
+  color: #fff;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 16px;
   -moz-osx-font-smoothing: grayscale;
