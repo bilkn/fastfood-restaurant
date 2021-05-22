@@ -46,3 +46,7 @@ img {
 .no-margin {
   margin: 0 !important;
 }
+
+.download {
+  background-color: #312F30;
+}

@@ -1,7 +1,8 @@
 import React from 'react';
+import "./index.css";
 
 export default function Testimonial({ children, ...rest }) {
-  return <div {...rest}>{children}</div>;
+  return <div className="px-5 pb-12" {...rest}>{children}</div>;
 }
 
 Testimonial.Wrapper = function TestimonialWrapper({ children, ...rest }) {
@@ -13,7 +14,7 @@ Testimonial.ContentWrapper = function TestimonialContentWrapper({ children, ...r
 };
 
 Testimonial.Text = function TestimonialText({ children, ...rest }) {
-  return <p {...rest}>{children}</p>;
+  return <p className="testimonial__text mt-6" {...rest}>{children}</p>;
 };
 
 Testimonial.Img = function TestimonialImg({ src, alt, ...rest }) {

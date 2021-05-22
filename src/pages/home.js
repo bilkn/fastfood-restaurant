@@ -59,7 +59,7 @@ export default function Home() {
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Exercitationem velit itaque minima aliquid.
             </Hero.Text>
-            <Button className="m-auto">ORDER NOW</Button>
+            <Button className="m-auto mt-4">ORDER NOW</Button>
           </Hero.Wrapper>
         </Hero>
         {/* HERO END */}
@@ -203,17 +203,17 @@ export default function Home() {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
                 distinctio neque nihil ducimus optio ratione.
               </Testimonial.Text>
-              <p>Lewis Murphy</p>
+              <p className="font-bold text-xl mt-6">Lewis Murphy</p>
               <p>American</p>
             </Testimonial.ContentWrapper>
           </Testimonial.Wrapper>
         </Testimonial>
         {/* TESTIMONIALS END */}
         {/* DOWNLOAD START */}
-        <div>
-          <div>
-            <h3>Download Our Menu</h3>
-            <Button>Download</Button>
+        <div className="download">
+          <div className="px-5 py-12 text-center">
+            <h3 className="text-2xl">Download Our Menu</h3>
+            <Button className="mt-6">Download</Button>
           </div>
         </div>
         {/* DOWNLOAD END */}

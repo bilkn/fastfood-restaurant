@@ -19,7 +19,7 @@ ActionCard.List = function ActionCardList({ children, ...rest }) {
 
 ActionCard.Item = function ActionCardItem({ className, children, ...rest }) {
   return (
-    <li className={`bg-no-repeat bg-center bg-cover px-5 py-6 ${className || ''}`} {...rest}>
+    <li className={`bg-no-repeat bg-center bg-cover px-5 py-6 rounded overflow-hidden ${className || ''}`} {...rest}>
       {children}
     </li>
   );
@@ -30,9 +30,9 @@ ActionCard.Title = function ActionCardTitle({ children, ...rest }) {
 };
 
 ActionCard.Text = function ActionCardText({ children, ...rest }) {
-  return <p className="mt-4" {...rest}>{children}</p>;
+  return <p className="mt-2" {...rest}>{children}</p>;
 };
 
 ActionCard.Price = function ActionCardPrice({ children, ...rest }) {
-  return <p {...rest}>{children}</p>;
+  return <p className="action-card__price text-xl mt-1" {...rest}>{children}</p>;
 };

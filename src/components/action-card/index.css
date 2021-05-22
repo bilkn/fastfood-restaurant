@@ -13,3 +13,7 @@
 .action-card__item--bg-4 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/tortilla-640w.jpg");
 } 
+
+.action-card__price {
+    color:#F5772B;
+}
