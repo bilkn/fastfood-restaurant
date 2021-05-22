@@ -6,3 +6,4 @@ export { default as Footer } from './footer';
 export { default as Header } from './header';
 export { default as Testimonial } from './testimonial';
 export { default as CTA } from './cta';
+export { default as Background } from './background';

@@ -1,0 +1,5 @@
+.background {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../../assets/hero-burger-640w.jpg') no-repeat center;
+  background-size: cover;
+}
