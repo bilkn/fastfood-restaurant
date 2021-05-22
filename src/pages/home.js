@@ -11,7 +11,7 @@ import {
   Testimonial,
 } from '../components';
 import images from '../fixtures/images';
-import { faHamburger } from '@fortawesome/free-solid-svg-icons';
+import { faHamburger, faQuoteRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const { chicken_wing_640, taco_640w, pizza_640w, burger_3_350w } = images;
 
@@ -44,7 +44,7 @@ export default function Home() {
                 </Header.Item>
               </Header.List>
             </Header.Nav>
-            <Button>ORDER NOW</Button>
+            <Button className="no-margin">ORDER NOW</Button>
           </Header.Wrapper>
         </Header>
         {/* HEADER END */}
@@ -59,7 +59,7 @@ export default function Home() {
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Exercitationem velit itaque minima aliquid.
             </Hero.Text>
-            <Button className="mt-4 m-auto">ORDER NOW</Button>
+            <Button className="m-auto">ORDER NOW</Button>
           </Hero.Wrapper>
         </Hero>
         {/* HERO END */}
@@ -140,7 +140,7 @@ export default function Home() {
         {/* MENU START */}
         <ActionCard>
           <ActionCard.List>
-            <ActionCard.Item>
+            <ActionCard.Item className="action-card__item--bg-1">
               <ActionCard.Wrapper>
                 <ActionCard.Title>Frappuccino</ActionCard.Title>
                 <ActionCard.Text>
@@ -151,7 +151,7 @@ export default function Home() {
                 <Button>ORDER NOW</Button>
               </ActionCard.Wrapper>
             </ActionCard.Item>
-            <ActionCard.Item>
+            <ActionCard.Item className="action-card__item--bg-2">
               <ActionCard.Wrapper>
                 <ActionCard.Title>Pizzata</ActionCard.Title>
                 <ActionCard.Text>
@@ -162,7 +162,7 @@ export default function Home() {
                 <Button>ORDER NOW</Button>
               </ActionCard.Wrapper>
             </ActionCard.Item>
-            <ActionCard.Item>
+            <ActionCard.Item className="action-card__item--bg-3">
               <ActionCard.Wrapper>
                 <ActionCard.Title>Texas Burger</ActionCard.Title>
                 <ActionCard.Text>
@@ -173,9 +173,9 @@ export default function Home() {
                 <Button>ORDER NOW</Button>
               </ActionCard.Wrapper>
             </ActionCard.Item>
-            <ActionCard.Item>
+            <ActionCard.Item className="action-card__item--bg-4">
               <ActionCard.Wrapper>
-                <ActionCard.Title>Frappuccino</ActionCard.Title>
+                <ActionCard.Title>Tortilla</ActionCard.Title>
                 <ActionCard.Text>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Voluptates, excepturi.
@@ -191,13 +191,21 @@ export default function Home() {
         <Testimonial>
           <Testimonial.Wrapper>
             <div></div>
-            <span>"</span>
-            <Testimonial.Text>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
-              distinctio neque nihil ducimus optio ratione.
-            </Testimonial.Text>
-            <p>Lewis Murphy</p>
-            <p>American</p>
+            <Testimonial.ContentWrapper>
+              <span>
+                <FontAwesomeIcon
+                  icon={faQuoteRight}
+                  size="2x"
+                  color="#F5772B"
+                />
+              </span>
+              <Testimonial.Text>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+                distinctio neque nihil ducimus optio ratione.
+              </Testimonial.Text>
+              <p>Lewis Murphy</p>
+              <p>American</p>
+            </Testimonial.ContentWrapper>
           </Testimonial.Wrapper>
         </Testimonial>
         {/* TESTIMONIALS END */}

@@ -1,0 +1,15 @@
+.action-card__item--bg-1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../../assets/frappuccino-640w.jpg");
+}
+
+.action-card__item--bg-2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../../assets/pizza-2-640w.jpg");
+}
+
+.action-card__item--bg-3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../../assets/burger-2-640w.jpg");
+}
+
+.action-card__item--bg-4 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/tortilla-640w.jpg");
+} 
