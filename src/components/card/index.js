@@ -3,7 +3,7 @@ import './index.css';
 
 export default function Card({ children, ...rest }) {
   return (
-    <div className="px-5 py-12" {...rest}>
+    <div className="px-5 mt-12" {...rest}>
       {children}
     </div>
   );

@@ -121,14 +121,17 @@ export default function Home() {
         {/* CTA START */}
         <CTA>
           <CTA.Wrapper>
-            <div>
+            <div className="flex">
               <CTA.Img src={burger_3_350w} alt="Hamburger" />
             </div>
             <div>
               <CTA.Title>Burger Master</CTA.Title>
-              <CTA.Text>lorem10</CTA.Text>
+              <CTA.Text>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde,
+                voluptate.
+              </CTA.Text>
               <CTA.Price>$6</CTA.Price>
-              <Button>ORDER NOW</Button>
+              <Button className="mt-4">ORDER NOW</Button>
             </div>
           </CTA.Wrapper>
         </CTA>
