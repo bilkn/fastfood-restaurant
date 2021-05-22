@@ -1,3 +1,8 @@
+.header {
+    background: url("./assets/hero-burger-640w.jpg") no-repeat;
+    background-size: cover;
+}
+
 .navigation {
     display: none;
 }

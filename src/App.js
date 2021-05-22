@@ -1,13 +1,14 @@
 import './App.css';
 import { faHamburger } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {burger_1_640w} from "./fixtures/images.json";
+import images from "./fixtures/images";
+const {frappuccino_640w} = images
 
 function App() {
   return (
     <>
       {/* HEADER START */}
-      <header>
+      <header className="header">
         <div className="flex justify-between px-5 py-5 items-center">
           <div>
             <FontAwesomeIcon icon={faHamburger} size="2x" />
@@ -35,32 +36,33 @@ function App() {
             <button>ORDER NOW</button>
           </div>
         </div>
+        {/* HERO START */}
+        <div>
+          <div>
+            <p>FAST FOOD BURGERS</p>
+            <h1>The fastest food, for instant hunger</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Exercitationem velit itaque minima aliquid.
+            </p>
+          </div>
+          <div>
+            <button>ORDER NOW</button>
+          </div>
+        </div>
+        {/* HERO END */}
       </header>
       {/* HEADER END */}
-      {/* HERO START */}
-      <div>
-        <div>
-          <p>FAST FOOD BURGERS</p>
-          <h1>The fastest food, for instant hunger</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Exercitationem velit itaque minima aliquid.
-          </p>
-        </div>
-        <div>
-          <button>ORDER NOW</button>
-        </div>
-      </div>
-      {/* HERO END */}
+
       {/* MAIN START */}
       <main>
         <div>
           <div>
-           {/*  <img src={} alt="" /> */}
+            <img src={frappuccino_640w} alt="" />{' '}
           </div>
         </div>
       </main>
-        {/* MAIN END */}
+      {/* MAIN END */}
     </>
   );
 }
