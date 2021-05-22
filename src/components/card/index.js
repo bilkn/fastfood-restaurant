@@ -4,12 +4,24 @@ export default function Card({ children, ...rest }) {
   return <div {...rest}>{children}</div>;
 }
 
+Card.Content = function CardContent({ children, ...rest }) {
+  <div {...rest}>{children}</div>;
+};
+
 Card.List = function CardList({ children, ...rest }) {
   <ul {...rest}>{children}</ul>;
 };
 
 Card.Item = function CardItem({ children, ...rest }) {
   <li {...rest}>{children}</li>;
+};
+
+Card.Link = function CardLink({ children, href, ...rest }) {
+  return (
+    <a href={href} {...rest}>
+      {children}
+    </a>
+  );
 };
 
 Card.Img = function CardImg({ src, alt, ...rest }) {

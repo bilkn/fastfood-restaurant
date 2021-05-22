@@ -8,6 +8,10 @@ Footer.Wrapper = function FooterWrapper({ children, ...rest }) {
   return <div {...rest}>{children}</div>;
 };
 
+Footer.ContentWrapper = function FooterContentWrapper({children, ...rest}) {
+  return <div {...rest}>{children}</div>
+}
+
 Footer.Title = function FooterTitle({ children, ...rest }) {
   return <h4 {...rest}>{children}</h4>;
 };

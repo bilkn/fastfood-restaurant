@@ -9,6 +9,11 @@ export default function Header({ children, rest }) {
   );
 }
 
+Header.Wrapper = function HeaderWrapper({ children, ...rest }) {
+  return <div {...rest}>{children}</div>;
+};
+
+
 Header.Logo = function HeaderLogo({ src, alt, ...rest }) {
   return <img src={src} alt={alt} {...rest} />;
 };
