@@ -1,0 +1,19 @@
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/tailwind.config.js": true,
+        "**/craco.config.js": true,
+        "**/package-lock.json": true,
+        "**/package.json": true,
+        "**/README.md": true,
+        "**/postcss.config.js": true,
+        "**/.gitignore": true,
+        ".vscode": true,
+        ".gitignore": true
+    },
+    "explorerExclude.backup": null
+}
