@@ -13,6 +13,10 @@ import {
 import images from '../fixtures/images';
 import { faHamburger, faQuoteRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { ReactComponent as FacebookIcon } from '../assets/social/facebook.svg';
+import { ReactComponent as InstagramIcon } from '../assets/social/instagram.svg';
+import { ReactComponent as LinkedInIcon } from '../assets/social/linkedin.svg';
+import { ReactComponent as TwitterIcon } from '../assets/social/twitter.svg';
 const { chicken_wing_640, taco_640w, pizza_640w, burger_3_350w } = images;
 
 export default function Home() {
@@ -222,68 +226,80 @@ export default function Home() {
       {/* FOOTER START */}
       <Footer>
         <Footer.Wrapper>
-          <Footer.ContentWrapper>
+          <Footer.ContentWrapper className="footer__content-wrapper--first mb-6">
             <div>
               <FontAwesomeIcon icon={faHamburger} size="2x" />
             </div>
-            <a href="emailto:">ham@burger.com</a>
+            <a href="emailto:" className="block mt-2">
+              ham@burger.com
+            </a>
           </Footer.ContentWrapper>
-          <Footer.ContentWrapper>
-            <Footer.Title>Our menu</Footer.Title>
-            <Footer.List>
+          <div className="flex w-full justify-between">
+            <Footer.ContentWrapper>
+              <Footer.Title>Our menu</Footer.Title>
+              <Footer.List>
+                <Footer.Item>
+                  <Footer.Link>Breakfast</Footer.Link>
+                </Footer.Item>
+                <Footer.Item>
+                  <Footer.Link>Lunch</Footer.Link>
+                </Footer.Item>
+                <Footer.Item>
+                  <Footer.Link>Dinner</Footer.Link>
+                </Footer.Item>
+              </Footer.List>
+            </Footer.ContentWrapper>
+            <Footer.ContentWrapper>
+              <Footer.Title>Information</Footer.Title>
+              <Footer.List>
+                <Footer.Item>
+                  <Footer.Link>About us</Footer.Link>
+                </Footer.Item>
+                <Footer.Item>
+                  <Footer.Link>Testimonial</Footer.Link>
+                </Footer.Item>
+                <Footer.Item>
+                  <Footer.Link>Event</Footer.Link>
+                </Footer.Item>
+              </Footer.List>
+            </Footer.ContentWrapper>
+            <Footer.ContentWrapper>
+              <Footer.Title>Useful Links</Footer.Title>
+              <Footer.List>
+                <Footer.Item>
+                  <Footer.Link>Services</Footer.Link>
+                </Footer.Item>
+                <Footer.Item>
+                  <Footer.Link>Support</Footer.Link>
+                </Footer.Item>
+                <Footer.Item>
+                  <Footer.Link>Operations</Footer.Link>
+                </Footer.Item>
+              </Footer.List>
+            </Footer.ContentWrapper>
+          </div>
+          <Footer.ContentWrapper className="no-margin">
+            <Footer.Title className="text-center mt-5">Social Links</Footer.Title>
+            <Footer.List className="flex space-x-3 mt-2">
               <Footer.Item>
-                <Footer.Link>Breakfast</Footer.Link>
+                <Footer.Link>
+                  <FacebookIcon style={{ width: '25px' }} />
+                </Footer.Link>
               </Footer.Item>
               <Footer.Item>
-                <Footer.Link>Lunch</Footer.Link>
+                <Footer.Link>
+                  <TwitterIcon style={{ width: '25px' }} />
+                </Footer.Link>
               </Footer.Item>
               <Footer.Item>
-                <Footer.Link>Dinner</Footer.Link>
-              </Footer.Item>
-            </Footer.List>
-          </Footer.ContentWrapper>
-          <Footer.ContentWrapper>
-            <Footer.Title>Information</Footer.Title>
-            <Footer.List>
-              <Footer.Item>
-                <Footer.Link>About us</Footer.Link>
+                <Footer.Link>
+                  <InstagramIcon style={{ width: '25px' }} />
+                </Footer.Link>
               </Footer.Item>
               <Footer.Item>
-                <Footer.Link>Testimonial</Footer.Link>
-              </Footer.Item>
-              <Footer.Item>
-                <Footer.Link>Event</Footer.Link>
-              </Footer.Item>
-            </Footer.List>
-          </Footer.ContentWrapper>
-          <Footer.ContentWrapper>
-            <Footer.Title>Useful Links</Footer.Title>
-            <Footer.List>
-              <Footer.Item>
-                <Footer.Link>Services</Footer.Link>
-              </Footer.Item>
-              <Footer.Item>
-                <Footer.Link>Support</Footer.Link>
-              </Footer.Item>
-              <Footer.Item>
-                <Footer.Link>Operations</Footer.Link>
-              </Footer.Item>
-            </Footer.List>
-          </Footer.ContentWrapper>
-          <Footer.ContentWrapper>
-            <Footer.Title>Social Links</Footer.Title>
-            <Footer.List>
-              <Footer.Item>
-                <Footer.Link></Footer.Link>
-              </Footer.Item>
-              <Footer.Item>
-                <Footer.Link></Footer.Link>
-              </Footer.Item>
-              <Footer.Item>
-                <Footer.Link></Footer.Link>
-              </Footer.Item>
-              <Footer.Item>
-                <Footer.Link></Footer.Link>
+                <Footer.Link>
+                  <LinkedInIcon style={{ width: '25px' }} />
+                </Footer.Link>
               </Footer.Item>
             </Footer.List>
           </Footer.ContentWrapper>
