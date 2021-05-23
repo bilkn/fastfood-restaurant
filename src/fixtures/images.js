@@ -10,6 +10,12 @@ import pizza_640w from '../assets/pizza-640w.jpg';
 import frappuccino_640w from '../assets/frappuccino-640w.jpg';
 import pizza_2_640w from '../assets/pizza-2-640w.jpg';
 import tortilla_640w from '../assets/tortilla-640w.jpg';
+import girl_1 from '../assets/people/girl-1.jpg';
+import girl_2 from '../assets/people/girl-2.jpg';
+import girl_3 from '../assets/people/girl-3.jpg';
+import man_1 from '../assets/people/man-1.jpg';
+import man_2 from '../assets/people/man-2.jpg';
+
 
 const images = {
   burger_1_640w,
@@ -24,6 +30,11 @@ const images = {
   frappuccino_640w,
   pizza_2_640w,
   tortilla_640w,
+  man_1,
+  man_2,
+  girl_1,
+  girl_2,
+  girl_3
 };
 
 export default images;

@@ -17,7 +17,17 @@ import { ReactComponent as FacebookIcon } from '../assets/social/facebook.svg';
 import { ReactComponent as InstagramIcon } from '../assets/social/instagram.svg';
 import { ReactComponent as LinkedInIcon } from '../assets/social/linkedin.svg';
 import { ReactComponent as TwitterIcon } from '../assets/social/twitter.svg';
-const { chicken_wing_640, taco_640w, pizza_640w, burger_3_350w } = images;
+const {
+  chicken_wing_640,
+  taco_640w,
+  pizza_640w,
+  burger_3_350w,
+  girl_1,
+  girl_2,
+  girl_3,
+  man_1,
+  man_2,
+} = images;
 
 export default function Home() {
   return (
@@ -194,7 +204,35 @@ export default function Home() {
         {/* TESTIMONIALS START */}
         <Testimonial>
           <Testimonial.Wrapper>
-            <div></div>
+            <div className="flex items-center justify-center">
+              <div className="testimonial__people">
+                  <Testimonial.Img
+                    className="girl-1"
+                    src={girl_1}
+                    alt="Smiling woman"
+                  />
+                <Testimonial.Img
+                  className="girl-2"
+                  src={girl_2}
+                  alt="Smiling woman"
+                />
+                <Testimonial.Img
+                  className="girl-3"
+                  src={girl_3}
+                  alt="Smiling woman"
+                />
+                <Testimonial.Img
+                  className="man-1"
+                  src={man_1}
+                  alt="Smiling man"
+                />
+                <Testimonial.Img
+                  className="man-2"
+                  src={man_2}
+                  alt="Smiling man"
+                />
+              </div>
+            </div>
             <Testimonial.ContentWrapper>
               <span>
                 <FontAwesomeIcon
@@ -279,7 +317,9 @@ export default function Home() {
             </Footer.ContentWrapper>
           </div>
           <Footer.ContentWrapper className="no-margin">
-            <Footer.Title className="text-center mt-5">Social Links</Footer.Title>
+            <Footer.Title className="text-center mt-5">
+              Social Links
+            </Footer.Title>
             <Footer.List className="flex space-x-3 mt-2">
               <Footer.Item>
                 <Footer.Link>
