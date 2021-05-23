@@ -8,7 +8,7 @@ export default function Footer({ children, ...rest }) {
 Footer.Wrapper = function FooterWrapper({ children, ...rest }) {
   return (
     <div
-      className="flex flex-wrap space-x-4 px-5 py-12 justify-center"
+      className="flex flex-wrap px-5 py-12 justify-center"
       {...rest}
     >
       {children}

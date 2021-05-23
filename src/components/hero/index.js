@@ -3,7 +3,7 @@ import './index.css';
 
 export default function Hero({ children, ...rest }) {
   return (
-    <div className="hero px-5 flex" {...rest}>
+    <div className="hero p-5 flex" {...rest}>
       {children}
     </div>
   );

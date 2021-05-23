@@ -19,7 +19,7 @@ Testimonial.ContentWrapper = function TestimonialContentWrapper({
 }) {
   return (
     <div
-      className="flex flex-col items-center justify-center text-center"
+      className="flex flex-col items-center justify-center text-center mt-12"
       {...rest}
     >
       {children}
