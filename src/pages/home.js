@@ -139,7 +139,7 @@ export default function Home() {
               <CTA.Img src={burger_3_350w} alt="Hamburger" />
             </div>
             <div className="flex flex-col flex-auto md:items-center md:justify-center">
-              <div>
+              <div className="m-auto">
                 <CTA.Title>Burger Master</CTA.Title>
                 <CTA.Text>
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -278,7 +278,7 @@ export default function Home() {
               ham@burger.com
             </a>
           </Footer.ContentWrapper>
-          <div className="flex w-full justify-between">
+          <div className="flex w-full justify-between sm:space-x-6 ">
             <Footer.ContentWrapper>
               <div>
                 <Footer.Title>Our menu</Footer.Title>
@@ -329,7 +329,7 @@ export default function Home() {
             </Footer.ContentWrapper>
           </div>
           <Footer.ContentWrapper className="no-margin">
-            <Footer.Title className="text-center mt-5">
+            <Footer.Title className="text-center mt-5 sm:mt-0">
               Social Links
             </Footer.Title>
             <Footer.List className="flex space-x-3 mt-2">
