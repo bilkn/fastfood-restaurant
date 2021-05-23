@@ -1,3 +1,68 @@
 .testimonial__text {
-    color: #a2a2a2;
+  color: #a2a2a2;
+  max-width: 40ch;
+}
+
+.testimonial__people-container {
+  flex-basis: 100%;
+}
+
+.testimonial__people {
+  animation: rotations 25s linear infinite;
+  border: 1px #ffa50040 solid;
+  border-radius: 50%;
+  display: flex;
+  height: 15rem;
+  position: relative;
+  width: 15rem;
+}
+
+.testimonial__img {
+  animation: inherit;
+  animation-direction: reverse;
+  border-radius: 50%;
+  content: '';
+  display: block;
+  height: 3.5rem;
+  position: absolute;
+  object-fit: cover;
+  width: 3.5rem;
+}
+
+.testimonial__content-wrapper {
+  flex-basis: 100%;
+}
+
+.man-1 {
+  left: 0.5rem;
+  top: 0.5rem;
+}
+
+.man-2 {
+  bottom: 0.5rem;
+  left: 0.5rem;
+}
+
+.girl-1 {
+  box-shadow: 0 0 50px #cb880b;
+  height: 4rem;
+  margin: auto;
+  position: static;
+  width: 4rem;
+}
+
+.girl-2 {
+  bottom: 0.5rem;
+  right: 0.5rem;
+}
+
+.girl-3 {
+  right: 0.5rem;
+  top: 0.5rem;
+}
+
+@keyframes rotations {
+  to {
+    transform: rotate(360deg);
+  }
 }

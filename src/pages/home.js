@@ -13,7 +13,21 @@ import {
 import images from '../fixtures/images';
 import { faHamburger, faQuoteRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-const { chicken_wing_640, taco_640w, pizza_640w, burger_3_350w } = images;
+import { ReactComponent as FacebookIcon } from '../assets/social/facebook.svg';
+import { ReactComponent as InstagramIcon } from '../assets/social/instagram.svg';
+import { ReactComponent as LinkedInIcon } from '../assets/social/linkedin.svg';
+import { ReactComponent as TwitterIcon } from '../assets/social/twitter.svg';
+const {
+  chicken_wing_640,
+  taco_640w,
+  pizza_640w,
+  burger_3_350w,
+  girl_1,
+  girl_2,
+  girl_3,
+  man_1,
+  man_2,
+} = images;
 
 export default function Home() {
   return (
@@ -121,17 +135,19 @@ export default function Home() {
         {/* CTA START */}
         <CTA>
           <CTA.Wrapper>
-            <div className="flex">
+            <div className="flex flex-auto">
               <CTA.Img src={burger_3_350w} alt="Hamburger" />
             </div>
-            <div>
-              <CTA.Title>Burger Master</CTA.Title>
-              <CTA.Text>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde,
-                voluptate.
-              </CTA.Text>
-              <CTA.Price>$6</CTA.Price>
-              <Button className="mt-4">ORDER NOW</Button>
+            <div className="flex flex-col flex-auto md:items-center md:justify-center">
+              <div className="m-auto">
+                <CTA.Title>Burger Master</CTA.Title>
+                <CTA.Text>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Unde, voluptate.
+                </CTA.Text>
+                <CTA.Price>$6</CTA.Price>
+                <Button className="mt-4">ORDER NOW</Button>
+              </div>
             </div>
           </CTA.Wrapper>
         </CTA>
@@ -190,7 +206,35 @@ export default function Home() {
         {/* TESTIMONIALS START */}
         <Testimonial>
           <Testimonial.Wrapper>
-            <div></div>
+            <div className="testimonial__people-container flex items-center justify-center">
+              <div className="testimonial__people">
+                <Testimonial.Img
+                  className="girl-1"
+                  src={girl_1}
+                  alt="Smiling woman"
+                />
+                <Testimonial.Img
+                  className="girl-2"
+                  src={girl_2}
+                  alt="Smiling woman"
+                />
+                <Testimonial.Img
+                  className="girl-3"
+                  src={girl_3}
+                  alt="Smiling woman"
+                />
+                <Testimonial.Img
+                  className="man-1"
+                  src={man_1}
+                  alt="Smiling man"
+                />
+                <Testimonial.Img
+                  className="man-2"
+                  src={man_2}
+                  alt="Smiling man"
+                />
+              </div>
+            </div>
             <Testimonial.ContentWrapper>
               <span>
                 <FontAwesomeIcon
@@ -211,9 +255,13 @@ export default function Home() {
         {/* TESTIMONIALS END */}
         {/* DOWNLOAD START */}
         <div className="download">
-          <div className="px-5 py-12 text-center">
-            <h3 className="text-2xl">Download Our Menu</h3>
-            <Button className="mt-6">Download</Button>
+          <div className="flex flex-col sm:flex-row items-center justify-between px-5 py-12 text-center">
+            <div className="download__content">
+              <h3 className="text-2xl">Download Our Menu</h3>
+            </div>
+            <div className="download__content">
+              <Button className="mt-6 sm:mt-0">Download</Button>
+            </div>
           </div>
         </div>
         {/* DOWNLOAD END */}
@@ -222,68 +270,88 @@ export default function Home() {
       {/* FOOTER START */}
       <Footer>
         <Footer.Wrapper>
-          <Footer.ContentWrapper>
+          <Footer.ContentWrapper className="footer__content-wrapper--first mb-6">
             <div>
               <FontAwesomeIcon icon={faHamburger} size="2x" />
             </div>
-            <a href="emailto:">ham@burger.com</a>
+            <a href="emailto:" className="block mt-2">
+              ham@burger.com
+            </a>
           </Footer.ContentWrapper>
-          <Footer.ContentWrapper>
-            <Footer.Title>Our menu</Footer.Title>
-            <Footer.List>
+          <div className="flex w-full justify-between sm:space-x-6 ">
+            <Footer.ContentWrapper>
+              <div>
+                <Footer.Title>Our menu</Footer.Title>
+                <Footer.List>
+                  <Footer.Item>
+                    <Footer.Link>Breakfast</Footer.Link>
+                  </Footer.Item>
+                  <Footer.Item>
+                    <Footer.Link>Lunch</Footer.Link>
+                  </Footer.Item>
+                  <Footer.Item>
+                    <Footer.Link>Dinner</Footer.Link>
+                  </Footer.Item>
+                </Footer.List>
+              </div>
+            </Footer.ContentWrapper>
+            <Footer.ContentWrapper>
+              <div>
+                <Footer.Title>Information</Footer.Title>
+                <Footer.List>
+                  <Footer.Item>
+                    <Footer.Link>About us</Footer.Link>
+                  </Footer.Item>
+                  <Footer.Item>
+                    <Footer.Link>Testimonial</Footer.Link>
+                  </Footer.Item>
+                  <Footer.Item>
+                    <Footer.Link>Event</Footer.Link>
+                  </Footer.Item>
+                </Footer.List>
+              </div>
+            </Footer.ContentWrapper>
+            <Footer.ContentWrapper>
+              <div>
+                <Footer.Title>Useful Links</Footer.Title>
+                <Footer.List>
+                  <Footer.Item>
+                    <Footer.Link>Services</Footer.Link>
+                  </Footer.Item>
+                  <Footer.Item>
+                    <Footer.Link>Support</Footer.Link>
+                  </Footer.Item>
+                  <Footer.Item>
+                    <Footer.Link>Operations</Footer.Link>
+                  </Footer.Item>
+                </Footer.List>
+              </div>
+            </Footer.ContentWrapper>
+          </div>
+          <Footer.ContentWrapper className="no-margin">
+            <Footer.Title className="text-center mt-5 sm:mt-0">
+              Social Links
+            </Footer.Title>
+            <Footer.List className="flex space-x-3 mt-2">
               <Footer.Item>
-                <Footer.Link>Breakfast</Footer.Link>
+                <Footer.Link>
+                  <FacebookIcon style={{ width: '25px' }} />
+                </Footer.Link>
               </Footer.Item>
               <Footer.Item>
-                <Footer.Link>Lunch</Footer.Link>
+                <Footer.Link>
+                  <TwitterIcon style={{ width: '25px' }} />
+                </Footer.Link>
               </Footer.Item>
               <Footer.Item>
-                <Footer.Link>Dinner</Footer.Link>
-              </Footer.Item>
-            </Footer.List>
-          </Footer.ContentWrapper>
-          <Footer.ContentWrapper>
-            <Footer.Title>Information</Footer.Title>
-            <Footer.List>
-              <Footer.Item>
-                <Footer.Link>About us</Footer.Link>
+                <Footer.Link>
+                  <InstagramIcon style={{ width: '25px' }} />
+                </Footer.Link>
               </Footer.Item>
               <Footer.Item>
-                <Footer.Link>Testimonial</Footer.Link>
-              </Footer.Item>
-              <Footer.Item>
-                <Footer.Link>Event</Footer.Link>
-              </Footer.Item>
-            </Footer.List>
-          </Footer.ContentWrapper>
-          <Footer.ContentWrapper>
-            <Footer.Title>Useful Links</Footer.Title>
-            <Footer.List>
-              <Footer.Item>
-                <Footer.Link>Services</Footer.Link>
-              </Footer.Item>
-              <Footer.Item>
-                <Footer.Link>Support</Footer.Link>
-              </Footer.Item>
-              <Footer.Item>
-                <Footer.Link>Operations</Footer.Link>
-              </Footer.Item>
-            </Footer.List>
-          </Footer.ContentWrapper>
-          <Footer.ContentWrapper>
-            <Footer.Title>Social Links</Footer.Title>
-            <Footer.List>
-              <Footer.Item>
-                <Footer.Link></Footer.Link>
-              </Footer.Item>
-              <Footer.Item>
-                <Footer.Link></Footer.Link>
-              </Footer.Item>
-              <Footer.Item>
-                <Footer.Link></Footer.Link>
-              </Footer.Item>
-              <Footer.Item>
-                <Footer.Link></Footer.Link>
+                <Footer.Link>
+                  <LinkedInIcon style={{ width: '25px' }} />
+                </Footer.Link>
               </Footer.Item>
             </Footer.List>
           </Footer.ContentWrapper>

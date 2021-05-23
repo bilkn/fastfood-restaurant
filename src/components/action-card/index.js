@@ -14,7 +14,7 @@ ActionCard.Wrapper = function ActionCardWrapper({ children, ...rest }) {
 };
 
 ActionCard.List = function ActionCardList({ children, ...rest }) {
-  return <ul className="space-y-6" {...rest}>{children}</ul>;
+  return <ul className="grid gap-6 sm:grid-cols-2" {...rest}>{children}</ul>;
 };
 
 ActionCard.Item = function ActionCardItem({ className, children, ...rest }) {

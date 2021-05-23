@@ -50,3 +50,7 @@ img {
 .download {
   background-color: #312F30;
 }
+
+.download__content {
+  flex-basis: 100%;
+}
