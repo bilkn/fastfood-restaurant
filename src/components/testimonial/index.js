@@ -10,7 +10,7 @@ export default function Testimonial({ children, ...rest }) {
 }
 
 Testimonial.Wrapper = function TestimonialWrapper({ children, ...rest }) {
-  return <div className="flex flex-col sm:flex-row" {...rest}>{children}</div>;
+  return <div className="maxed flex flex-col sm:flex-row" {...rest}>{children}</div>;
 };
 
 Testimonial.ContentWrapper = function TestimonialContentWrapper({

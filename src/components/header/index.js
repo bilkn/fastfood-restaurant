@@ -8,7 +8,7 @@ export default function Header({ children, rest }) {
 Header.Wrapper = function HeaderWrapper({ children, className, ...rest }) {
   return (
     <div
-      className={`flex justify-between px-5 py-5 pb-0 items-center ${
+      className={`maxed flex justify-between px-5 py-5 pb-0 items-center ${
         className || ''
       }`}
       {...rest}
