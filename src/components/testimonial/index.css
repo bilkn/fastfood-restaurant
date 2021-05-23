@@ -1,5 +1,10 @@
 .testimonial__text {
   color: #a2a2a2;
+  max-width: 40ch;
+}
+
+.testimonial__people-container {
+  flex-basis: 100%;
 }
 
 .testimonial__people {
@@ -22,6 +27,10 @@
   position: absolute;
   object-fit: cover;
   width: 3.5rem;
+}
+
+.testimonial__content-wrapper {
+  flex-basis: 100%;
 }
 
 .man-1 {

@@ -206,7 +206,7 @@ export default function Home() {
         {/* TESTIMONIALS START */}
         <Testimonial>
           <Testimonial.Wrapper>
-            <div className="flex items-center justify-center">
+            <div className="testimonial__people-container flex items-center justify-center">
               <div className="testimonial__people">
                 <Testimonial.Img
                   className="girl-1"
@@ -255,9 +255,13 @@ export default function Home() {
         {/* TESTIMONIALS END */}
         {/* DOWNLOAD START */}
         <div className="download">
-          <div className="px-5 py-12 text-center">
-            <h3 className="text-2xl">Download Our Menu</h3>
-            <Button className="mt-6">Download</Button>
+          <div className="flex flex-col sm:flex-row items-center justify-between px-5 py-12 text-center">
+            <div className="download__content">
+              <h3 className="text-2xl">Download Our Menu</h3>
+            </div>
+            <div className="download__content">
+              <Button className="mt-6 sm:mt-0">Download</Button>
+            </div>
           </div>
         </div>
         {/* DOWNLOAD END */}
@@ -276,46 +280,52 @@ export default function Home() {
           </Footer.ContentWrapper>
           <div className="flex w-full justify-between">
             <Footer.ContentWrapper>
-              <Footer.Title>Our menu</Footer.Title>
-              <Footer.List>
-                <Footer.Item>
-                  <Footer.Link>Breakfast</Footer.Link>
-                </Footer.Item>
-                <Footer.Item>
-                  <Footer.Link>Lunch</Footer.Link>
-                </Footer.Item>
-                <Footer.Item>
-                  <Footer.Link>Dinner</Footer.Link>
-                </Footer.Item>
-              </Footer.List>
+              <div>
+                <Footer.Title>Our menu</Footer.Title>
+                <Footer.List>
+                  <Footer.Item>
+                    <Footer.Link>Breakfast</Footer.Link>
+                  </Footer.Item>
+                  <Footer.Item>
+                    <Footer.Link>Lunch</Footer.Link>
+                  </Footer.Item>
+                  <Footer.Item>
+                    <Footer.Link>Dinner</Footer.Link>
+                  </Footer.Item>
+                </Footer.List>
+              </div>
             </Footer.ContentWrapper>
             <Footer.ContentWrapper>
-              <Footer.Title>Information</Footer.Title>
-              <Footer.List>
-                <Footer.Item>
-                  <Footer.Link>About us</Footer.Link>
-                </Footer.Item>
-                <Footer.Item>
-                  <Footer.Link>Testimonial</Footer.Link>
-                </Footer.Item>
-                <Footer.Item>
-                  <Footer.Link>Event</Footer.Link>
-                </Footer.Item>
-              </Footer.List>
+              <div>
+                <Footer.Title>Information</Footer.Title>
+                <Footer.List>
+                  <Footer.Item>
+                    <Footer.Link>About us</Footer.Link>
+                  </Footer.Item>
+                  <Footer.Item>
+                    <Footer.Link>Testimonial</Footer.Link>
+                  </Footer.Item>
+                  <Footer.Item>
+                    <Footer.Link>Event</Footer.Link>
+                  </Footer.Item>
+                </Footer.List>
+              </div>
             </Footer.ContentWrapper>
             <Footer.ContentWrapper>
-              <Footer.Title>Useful Links</Footer.Title>
-              <Footer.List>
-                <Footer.Item>
-                  <Footer.Link>Services</Footer.Link>
-                </Footer.Item>
-                <Footer.Item>
-                  <Footer.Link>Support</Footer.Link>
-                </Footer.Item>
-                <Footer.Item>
-                  <Footer.Link>Operations</Footer.Link>
-                </Footer.Item>
-              </Footer.List>
+              <div>
+                <Footer.Title>Useful Links</Footer.Title>
+                <Footer.List>
+                  <Footer.Item>
+                    <Footer.Link>Services</Footer.Link>
+                  </Footer.Item>
+                  <Footer.Item>
+                    <Footer.Link>Support</Footer.Link>
+                  </Footer.Item>
+                  <Footer.Item>
+                    <Footer.Link>Operations</Footer.Link>
+                  </Footer.Item>
+                </Footer.List>
+              </div>
             </Footer.ContentWrapper>
           </div>
           <Footer.ContentWrapper className="no-margin">

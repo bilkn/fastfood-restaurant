@@ -1,3 +1,7 @@
+.footer__content-wrapper {
+    flex-basis: 100%;
+}
+
 .footer__content-wrapper--first {
     text-align: center;
     width: 100%;

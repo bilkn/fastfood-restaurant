@@ -22,7 +22,7 @@ Footer.ContentWrapper = function FooterContentWrapper({
   ...rest
 }) {
   return (
-    <div className={`${className || ''}`} {...rest}>
+    <div className={`footer__content-wrapper flex flex-col items-center ${className || ''}`} {...rest}>
       {children}
     </div>
   );

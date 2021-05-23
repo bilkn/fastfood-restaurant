@@ -3,14 +3,14 @@ import './index.css';
 
 export default function Testimonial({ children, ...rest }) {
   return (
-    <div className="px-5 pb-12" {...rest}>
+    <div className="px-5 pb-12 mt-6" {...rest}>
       {children}
     </div>
   );
 }
 
 Testimonial.Wrapper = function TestimonialWrapper({ children, ...rest }) {
-  return <div {...rest}>{children}</div>;
+  return <div className="flex flex-col sm:flex-row" {...rest}>{children}</div>;
 };
 
 Testimonial.ContentWrapper = function TestimonialContentWrapper({
@@ -19,7 +19,7 @@ Testimonial.ContentWrapper = function TestimonialContentWrapper({
 }) {
   return (
     <div
-      className="flex flex-col items-center justify-center text-center mt-12"
+      className="testimonial__content-wrapper flex flex-col items-center justify-center text-center mt-12 sm:mt-0"
       {...rest}
     >
       {children}
