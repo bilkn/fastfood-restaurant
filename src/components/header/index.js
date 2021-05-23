@@ -1,4 +1,5 @@
 import React from 'react';
+import "./index.css";
 
 export default function Header({ children, rest }) {
   return <header {...rest}>{children}</header>;
@@ -22,11 +23,11 @@ Header.Logo = function HeaderLogo({ src, alt, ...rest }) {
 };
 
 Header.Nav = function HeaderNav({ children, ...rest }) {
-  return <nav {...rest}>{children}</nav>;
+  return <nav className="header__nav" {...rest}>{children}</nav>;
 };
 
 Header.List = function HeaderList({ children, ...rest }) {
-  return <ul {...rest}>{children}</ul>;
+  return <ul className="hidden md:flex space-x-6 m-auto" {...rest}>{children}</ul>;
 };
 
 Header.Item = function HeaderItem({ children, ...rest }) {

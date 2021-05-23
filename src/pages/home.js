@@ -36,11 +36,13 @@ export default function Home() {
         {/* HEADER START */}
         <Header>
           <Header.Wrapper>
-            <Header.Link>
-              <FontAwesomeIcon icon={faHamburger} size="2x" />
-            </Header.Link>
+            <div className="header__container">
+              <Header.Link>
+                <FontAwesomeIcon icon={faHamburger} size="2x" />
+              </Header.Link>
+            </div>
             <Header.Nav>
-              <Header.List className="navigation flex space-x-4">
+              <Header.List>
                 <Header.Item>
                   <Header.Link href="#">HOME</Header.Link>
                 </Header.Item>
@@ -58,7 +60,9 @@ export default function Home() {
                 </Header.Item>
               </Header.List>
             </Header.Nav>
-            <Button className="no-margin">ORDER NOW</Button>
+            <div className="header__container">
+              <Button className="no-margin self-end">ORDER NOW</Button>
+            </div>
           </Header.Wrapper>
         </Header>
         {/* HEADER END */}
