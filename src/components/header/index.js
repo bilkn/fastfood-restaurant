@@ -27,7 +27,7 @@ Header.Nav = function HeaderNav({ children, ...rest }) {
 };
 
 Header.List = function HeaderList({ children, ...rest }) {
-  return <ul className="hidden md:flex space-x-6 m-auto" {...rest}>{children}</ul>;
+  return <ul className="header__list hidden md:flex space-x-6 m-auto" {...rest}>{children}</ul>;
 };
 
 Header.Item = function HeaderItem({ children, ...rest }) {
@@ -36,7 +36,7 @@ Header.Item = function HeaderItem({ children, ...rest }) {
 
 Header.Link = function HeaderLink({ children, href, ...rest }) {
   return (
-    <a href={href} {...rest}>
+    <a href={href} className="hover:text-white focus:text-white transition duration-50" {...rest}>
       {children}
     </a>
   );

@@ -50,7 +50,7 @@ Footer.Item = function FooterItem({ children, ...rest }) {
 
 Footer.Link = function FooterLink({ children, href, ...rest }) {
   return (
-    <a href={href} className="footer__link" {...rest}>
+    <a href={href} className="footer__link hover:underline cursor-pointer" {...rest}>
       {children}
     </a>
   );

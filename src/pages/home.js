@@ -21,6 +21,7 @@ const {
   chicken_wing_640,
   taco_640w,
   pizza_640w,
+  sandwich_640w,
   burger_3_350w,
   girl_1,
   girl_2,
@@ -112,9 +113,9 @@ export default function Home() {
             </Card.Item>
             <Card.Item>
               <Card.Link href="#">
-                <Card.Img src={chicken_wing_640} alt="Chicken wing" />
+                <Card.Img src={sandwich_640w} alt="Sandwich" />
                 <Card.Content>
-                  <Card.Title>Chicken Wing</Card.Title>
+                  <Card.Title>Sandwich</Card.Title>
                   <Card.Text>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Saepe, similique!

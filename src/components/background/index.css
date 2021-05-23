@@ -3,3 +3,10 @@
     url('../../assets/hero-burger-640w.jpg') no-repeat center;
   background-size: cover;
 }
+
+@media screen and (min-width: 60em) {
+  .background {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url('../../assets/hero-burger-1500w.jpg');
+  }
+}
