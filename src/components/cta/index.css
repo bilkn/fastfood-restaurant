@@ -2,6 +2,11 @@
     background: #312F30;
 }
 
+.cta__text {
+    max-width: 40ch;
+}
+
 .cta__price {
     color: #ec6d2a;
 }
+

@@ -6,7 +6,7 @@ export default function CTA({ children, ...rest }) {
 }
 
 CTA.Wrapper = function CTAWrapper({ children, ...rest }) {
-  return <div className="px-5 pb-8 text-center" {...rest}>{children}</div>;
+  return <div className="flex flex-col md:flex-row md:pb-2 px-5 pb-8 text-center" {...rest}>{children}</div>;
 };
 
 CTA.Img = function CTAImg({ src, alt, ...rest }) {
@@ -18,7 +18,7 @@ CTA.Title = function CTATitle({ children, ...rest }) {
 };
 
 CTA.Text = function CTAText({ children, ...rest }) {
-  return <p className="mt-2" {...rest}>{children}</p>;
+  return <p className="cta__text mt-2" {...rest}>{children}</p>;
 };
 
 CTA.Price = function CTAPrice({ children, ...rest }) {

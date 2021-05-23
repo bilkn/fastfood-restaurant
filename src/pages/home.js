@@ -135,17 +135,19 @@ export default function Home() {
         {/* CTA START */}
         <CTA>
           <CTA.Wrapper>
-            <div className="flex">
+            <div className="flex flex-auto">
               <CTA.Img src={burger_3_350w} alt="Hamburger" />
             </div>
-            <div>
-              <CTA.Title>Burger Master</CTA.Title>
-              <CTA.Text>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde,
-                voluptate.
-              </CTA.Text>
-              <CTA.Price>$6</CTA.Price>
-              <Button className="mt-4">ORDER NOW</Button>
+            <div className="flex flex-col flex-auto md:items-center md:justify-center">
+              <div>
+                <CTA.Title>Burger Master</CTA.Title>
+                <CTA.Text>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Unde, voluptate.
+                </CTA.Text>
+                <CTA.Price>$6</CTA.Price>
+                <Button className="mt-4">ORDER NOW</Button>
+              </div>
             </div>
           </CTA.Wrapper>
         </CTA>
@@ -206,11 +208,11 @@ export default function Home() {
           <Testimonial.Wrapper>
             <div className="flex items-center justify-center">
               <div className="testimonial__people">
-                  <Testimonial.Img
-                    className="girl-1"
-                    src={girl_1}
-                    alt="Smiling woman"
-                  />
+                <Testimonial.Img
+                  className="girl-1"
+                  src={girl_1}
+                  alt="Smiling woman"
+                />
                 <Testimonial.Img
                   className="girl-2"
                   src={girl_2}
