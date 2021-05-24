@@ -6,7 +6,7 @@ export default function CTA({ children, ...rest }) {
 }
 
 CTA.Wrapper = function CTAWrapper({ children, ...rest }) {
-  return <div className="flex flex-col md:flex-row md:pb-2 px-5 pb-8 text-center" {...rest}>{children}</div>;
+  return <div className="maxed flex flex-col md:flex-row md:pb-2 px-5 pb-8 text-center" {...rest}>{children}</div>;
 };
 
 CTA.Img = function CTAImg({ src, alt, ...rest }) {

@@ -1,0 +1,15 @@
+.header__list {
+    color: #eeeeee;
+}
+
+.header__container {
+    display: flex;
+    flex-basis: 100%;
+    flex-direction: column;
+}
+
+.header__nav {
+    flex-basis: 100%;
+    flex-shrink: 0;
+    max-width: fit-content;
+}

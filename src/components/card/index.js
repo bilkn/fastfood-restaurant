@@ -18,7 +18,7 @@ Card.Content = function CardContent({ children, ...rest }) {
 };
 
 Card.List = function CardList({ children, ...rest }) {
-  return <ul className="grid sm:grid-cols-2 gap-6 md:grid-cols-4"{...rest}>{children}</ul>;
+  return <ul className="maxed grid sm:grid-cols-2 gap-6 md:grid-cols-4"{...rest}>{children}</ul>;
 };
 
 Card.Item = function CardItem({ children, ...rest }) {

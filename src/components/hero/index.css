@@ -1,4 +1,9 @@
 .hero {
-    min-height: 45vh;
+  min-height: 45vh;
 }
 
+@media screen and (min-width: 64em) {
+  .hero {
+    min-height: 50vh;
+  }
+}

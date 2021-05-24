@@ -1,4 +1,5 @@
 import React from 'react';
+import "./index.css";
 
 export default function Header({ children, rest }) {
   return <header {...rest}>{children}</header>;
@@ -7,7 +8,7 @@ export default function Header({ children, rest }) {
 Header.Wrapper = function HeaderWrapper({ children, className, ...rest }) {
   return (
     <div
-      className={`flex justify-between px-5 py-5 pb-0 items-center ${
+      className={`maxed flex justify-between px-5 py-5 pb-0 items-center ${
         className || ''
       }`}
       {...rest}
@@ -22,11 +23,11 @@ Header.Logo = function HeaderLogo({ src, alt, ...rest }) {
 };
 
 Header.Nav = function HeaderNav({ children, ...rest }) {
-  return <nav {...rest}>{children}</nav>;
+  return <nav className="header__nav" {...rest}>{children}</nav>;
 };
 
 Header.List = function HeaderList({ children, ...rest }) {
-  return <ul {...rest}>{children}</ul>;
+  return <ul className="header__list hidden md:flex space-x-6 m-auto" {...rest}>{children}</ul>;
 };
 
 Header.Item = function HeaderItem({ children, ...rest }) {
@@ -35,7 +36,7 @@ Header.Item = function HeaderItem({ children, ...rest }) {
 
 Header.Link = function HeaderLink({ children, href, ...rest }) {
   return (
-    <a href={href} {...rest}>
+    <a href={href} className="hover:text-white focus:text-white transition duration-50" {...rest}>
       {children}
     </a>
   );
