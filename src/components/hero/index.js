@@ -23,7 +23,7 @@ Hero.Title = function HeroTitle({ children, ...rest }) {
 
 Hero.Text = function HeroText({ children, ...rest }) {
   return (
-    <p className="text-center mt-3" {...rest}>
+    <p className="hero__text text-center mt-3" {...rest}>
       {children}
     </p>
   );
