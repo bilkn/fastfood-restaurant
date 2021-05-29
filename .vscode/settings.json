@@ -8,7 +8,7 @@
         "**/tailwind.config.js": true,
         "**/craco.config.js": true,
         "**/package-lock.json": true,
-        "**/package.json": true,
+        "**/package.json": false,
         "**/README.md": true,
         "**/postcss.config.js": true,
         "**/.gitignore": true,
