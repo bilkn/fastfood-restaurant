@@ -30,13 +30,21 @@ Header.List = function HeaderList({ children, ...rest }) {
   return <ul className="header__list hidden md:flex space-x-6 m-auto" {...rest}>{children}</ul>;
 };
 
-Header.Item = function HeaderItem({ children, ...rest }) {
-  return <li {...rest}>{children}</li>;
+Header.Item = function HeaderItem({className, children, ...rest }) {
+  return (
+    <li {...rest} className={`header__item animate__animated animate__fadeInDown ${className || ""}`}>
+      {children}
+    </li>
+  );
 };
 
 Header.Link = function HeaderLink({ children, href, ...rest }) {
   return (
-    <a href={href} className="hover:text-white focus:text-white transition duration-50" {...rest}>
+    <a
+      href={href}
+      className="hover:text-white focus:text-white transition duration-50"
+      {...rest}
+    >
       {children}
     </a>
   );
