@@ -38,7 +38,7 @@ Testimonial.Text = function TestimonialText({ children, ...rest }) {
 Testimonial.Img = function TestimonialImg({ className, src, alt, ...rest }) {
   return (
     <img
-      className={`testimonial__img ${className || ''}`}
+      className={`testimonial__img animate__animated ${className || ''}`}
       src={src}
       alt={alt}
       {...rest}

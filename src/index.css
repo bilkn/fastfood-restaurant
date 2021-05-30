@@ -52,7 +52,7 @@ img {
 }
 
 .download {
-  background-color: #312F30;
+  background-color: #312f30;
 }
 
 .download__content {
@@ -63,6 +63,10 @@ img {
   max-width: 1080px;
   margin-left: auto;
   margin-right: auto;
+}
+
+img:not([src]) {
+  visibility: hidden;
 }
 
 .animate-delay--100 {
@@ -96,4 +100,3 @@ img {
 .animate-delay--800 {
   animation-delay: 800ms;
 }
-

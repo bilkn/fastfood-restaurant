@@ -38,7 +38,7 @@ Card.Link = function CardLink({ children, href, ...rest }) {
 };
 
 Card.Img = function CardImg({ src, alt, ...rest }) {
-  return <img src={src} alt={alt} {...rest} />;
+  return <img src={src} alt={alt} className="animate__animated" width="640" height="457" {...rest} />;
 };
 
 Card.Title = function CardTitle({ children, ...rest }) {

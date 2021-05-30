@@ -17,6 +17,7 @@ import { ReactComponent as FacebookIcon } from '../assets/social/facebook.svg';
 import { ReactComponent as InstagramIcon } from '../assets/social/instagram.svg';
 import { ReactComponent as LinkedInIcon } from '../assets/social/linkedin.svg';
 import { ReactComponent as TwitterIcon } from '../assets/social/twitter.svg';
+import { useLazyLoad } from '../hooks';
 const {
   chicken_wing_640,
   taco_640w,
@@ -31,7 +32,7 @@ const {
 } = images;
 
 export default function Home() {
-
+  useLazyLoad('img');
 
   return (
     <>
@@ -92,7 +93,7 @@ export default function Home() {
             <Card.List>
               <Card.Item>
                 <Card.Link href="#">
-                  <Card.Img src={chicken_wing_640} alt="Chicken wing" />
+                  <Card.Img data-lazy={chicken_wing_640} alt="Chicken wing" />
                   <Card.Content>
                     <Card.Title>Chicken Wing</Card.Title>
                     <Card.Text>
@@ -104,7 +105,7 @@ export default function Home() {
               </Card.Item>
               <Card.Item>
                 <Card.Link href="#">
-                  <Card.Img src={taco_640w} alt="Taco" />
+                  <Card.Img data-lazy={taco_640w} alt="Taco" />
                   <Card.Content>
                     <Card.Title>Taco</Card.Title>
                     <Card.Text>
@@ -116,7 +117,7 @@ export default function Home() {
               </Card.Item>
               <Card.Item>
                 <Card.Link href="#">
-                  <Card.Img src={sandwich_640w} alt="Sandwich" />
+                  <Card.Img data-lazy={sandwich_640w} alt="Sandwich" />
                   <Card.Content>
                     <Card.Title>Sandwich</Card.Title>
                     <Card.Text>
@@ -128,7 +129,7 @@ export default function Home() {
               </Card.Item>
               <Card.Item>
                 <Card.Link href="#">
-                  <Card.Img src={pizza_640w} alt="Pizza" />
+                  <Card.Img data-lazy={pizza_640w} alt="Pizza" />
                   <Card.Content>
                     <Card.Title>Pizza</Card.Title>
                     <Card.Text>
@@ -144,7 +145,7 @@ export default function Home() {
           <CTA>
             <CTA.Wrapper>
               <div className="flex flex-auto">
-                <CTA.Img src={burger_3_350w} alt="Hamburger" width="350" />
+                <CTA.Img data-lazy={burger_3_350w} alt="Hamburger" width="350" height="320" />
               </div>
               <div className="flex flex-col flex-auto md:items-center md:justify-center">
                 <div className="m-auto">
@@ -217,27 +218,27 @@ export default function Home() {
                 <div className="testimonial__people">
                   <Testimonial.Img
                     className="girl-1"
-                    src={girl_1}
+                    data-lazy={girl_1}
                     alt="Smiling woman"
                   />
                   <Testimonial.Img
                     className="girl-2"
-                    src={girl_2}
+                    data-lazy={girl_2}
                     alt="Smiling woman"
                   />
                   <Testimonial.Img
                     className="girl-3"
-                    src={girl_3}
+                    data-lazy={girl_3}
                     alt="Smiling woman"
                   />
                   <Testimonial.Img
                     className="man-1"
-                    src={man_1}
+                    data-lazy={man_1}
                     alt="Smiling man"
                   />
                   <Testimonial.Img
                     className="man-2"
-                    src={man_2}
+                    data-lazy={man_2}
                     alt="Smiling man"
                   />
                 </div>

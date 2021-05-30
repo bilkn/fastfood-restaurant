@@ -1,21 +1,9 @@
-import React, { useEffect, useState } from 'react';
-import { useInView } from 'react-intersection-observer';
+import React from 'react';
 import './index.css';
 
 export default function CTA({ children, ...rest }) {
-  const { ref, inView} = useInView({ threshold: 0.5, rootMargin:"-150px" });
-  const [isIntersect, setIsIntersect] = useState(false);
-
-    useEffect(() => {
-      if(inView) setIsIntersect(true);  
-    }, [inView, ref])
-
   return (
-    <div
-      ref={ref}
-      className={`cta mt-12 animate__animated animate__delay-1 ${isIntersect ? "animate__fadeIn" : ""}`}
-      {...rest}
-    >
+    <div className="cta mt-12" {...rest}>
       {children}
     </div>
   );
@@ -33,7 +21,9 @@ CTA.Wrapper = function CTAWrapper({ children, ...rest }) {
 };
 
 CTA.Img = function CTAImg({ src, alt, ...rest }) {
-  return <img className="m-auto" src={src} alt={alt} {...rest} />;
+  return (
+    <img className="m-auto animate__animated" src={src} alt={alt} {...rest} />
+  );
 };
 
 CTA.Title = function CTATitle({ children, ...rest }) {
