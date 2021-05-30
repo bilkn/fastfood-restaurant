@@ -23,7 +23,11 @@ Card.List = function CardList({ children, ...rest }) {
 
 Card.Item = function CardItem({ children, ...rest }) {
   return (
-    <li className="rounded-xl overflow-hidden" {...rest}>
+    <li
+      className="card__item invisible rounded-xl overflow-hidden animate__animated animate-delay--200"
+      data-card-item
+      {...rest}
+    >
       {children}
     </li>
   );
@@ -38,7 +42,7 @@ Card.Link = function CardLink({ children, href, ...rest }) {
 };
 
 Card.Img = function CardImg({ src, alt, ...rest }) {
-  return <img src={src} alt={alt} className="animate__animated" width="640" height="457" {...rest} />;
+  return <img src={src}  alt={alt} width="640" height="427" {...rest} />;
 };
 
 Card.Title = function CardTitle({ children, ...rest }) {
