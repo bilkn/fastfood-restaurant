@@ -2,7 +2,7 @@
 
 A landing page for fast food restaurant.
 
-[CloudNote](https://cloudnote.netlify.app/)
+[CloudNote](https://fastfood-restaurant.netlify.app/)
 
 ## Getting Started
 
